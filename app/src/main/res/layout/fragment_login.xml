@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_63"
+    android:gravity="center"
+    android:background="@drawable/tree_bg">
+
+    <com.saif.familytree.core.customuicomonents.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name"
+        style="@style/Fields.Input"
+        android:padding="@dimen/default_16"
+        android:background="@drawable/empty_edittext"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/default_16"
+        />
+    <com.saif.familytree.core.customuicomonents.CustomButtonView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ener"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/default_48"
+        android:background="@drawable/radiud_border_button"/>
+
+
+
+</LinearLayout>

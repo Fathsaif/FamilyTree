@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/family_bg">
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/default_36"
+        android:paddingRight="@dimen/default_36"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/default_36"
+            />
+<com.saif.familytree.core.customuicomonents.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_16"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/default_24"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:text="@string/bio"/>
+
+<com.saif.familytree.core.customuicomonents.CustomEditText
+            android:id="@+id/edit_text_bio"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingLeft="@dimen/default_16"
+            android:drawablePadding="@dimen/default_16"
+            android:drawableRight="@drawable/ic_pen_white"
+            android:hint="@string/write_something"
+            android:textColor="@android:color/white"
+            android:background="@drawable/empty_edittext"
+            android:textColorHint="@android:color/white"
+            android:paddingRight="@dimen/default_16"
+            android:layout_gravity="center"/>
+
+        <include layout="@layout/next_button"/>
+    </LinearLayout>
+</RelativeLayout>

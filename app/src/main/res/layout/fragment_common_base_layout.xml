@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ViewStub
+        android:id="@+id/fragment_common_base_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+
+            <com.saif.familytree.core.customuicomonents.CustomTextView
+                android:id="@+id/txt_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading_text"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/error_image_view"
+            android:layout_width="@dimen/default_112"
+            android:layout_height="@dimen/default_112"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/empty_no_network"
+            />
+
+        <com.saif.familytree.core.customuicomonents.CustomTextView
+            android:id="@+id/error_message_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text=""
+            android:padding="@dimen/default_16"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <com.saif.familytree.core.customuicomonents.CustomButtonView
+            android:id="@+id/error_retry_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/retry_button"
+            android:textAllCaps="false"
+            android:paddingRight="@dimen/default_8"
+            android:paddingLeft="@dimen/default_8"
+            android:background="@color/colorPrimary"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

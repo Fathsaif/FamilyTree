@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/family_bg">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/default_24"
+        android:paddingRight="@dimen/default_24"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+<com.saif.familytree.core.customuicomonents.CustomTextView            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_photo"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="@dimen/default_24"/>
+<FrameLayout
+    android:layout_width="@dimen/default_124"
+    android:layout_height="@dimen/default_124"
+    android:layout_marginBottom="@dimen/default_16"
+    android:id="@+id/layout_select_image"
+        android:layout_gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@android:color/holo_blue_bright"
+            app:civ_border_overlay="true"
+            android:background="@drawable/ic_select_photo_holder"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/add_btn"
+        android:layout_gravity="bottom|right"/>
+</FrameLayout>
+        <include layout="@layout/next_button"/>
+    </LinearLayout>
+
+</RelativeLayout>

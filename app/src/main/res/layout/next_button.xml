@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.saif.familytree.core.customuicomonents.CustomButtonView
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/default_24"
+        android:background="@drawable/button_blue_bg_rounded"
+        android:drawableRight="@drawable/ic_next_white"
+        android:gravity="center"
+        android:paddingRight="@dimen/default_16"
+        android:text="@string/next"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

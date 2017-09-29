@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/family_bg"
+    android:paddingLeft="@dimen/default_24"
+    android:paddingRight="@dimen/default_24"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/default_24"
+            />
+
+        <com.saif.familytree.core.customuicomonents.CustomEditText
+            android:id="@+id/edit_text_user_name"
+            style="@style/Fields.Input"
+            android:drawableRight="@drawable/ic_person_white_24dp"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"/>
+
+        <com.saif.familytree.core.customuicomonents.CustomEditText
+            android:id="@+id/edit_text_address"
+            style="@style/Fields.Input"
+            android:drawableRight="@drawable/ic_home_white_24dp"
+            android:hint="@string/adress"
+            android:gravity="right|center"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword" />
+
+
+        <com.saif.familytree.core.customuicomonents.CustomEditText
+            android:id="@+id/edit_text_job"
+            style="@style/Fields.Input"
+            android:drawableRight="@drawable/ic_work_white_24dp"
+            android:hint="@string/job"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"/>
+        <com.saif.familytree.core.customuicomonents.CustomEditText
+            android:id="@+id/edit_text_phone"
+            style="@style/Fields.Input"
+            android:drawableRight="@drawable/ic_phone_android_white_24dp"
+            android:hint="@string/phone"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"/>
+
+
+        <com.saif.familytree.core.customuicomonents.CustomEditText
+            android:id="@+id/edit_text_date"
+            style="@style/Fields.Input"
+            android:drawableRight="@drawable/ic_date_range_white_24dp"
+            android:inputType="date"
+            android:gravity="right|center"
+            android:text="@string/birth_date"
+            android:imeOptions="actionDone"/>
+        <RadioGroup
+            android:id="@+id/radio_group_user_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_8"
+            android:orientation="horizontal"
+            android:background="@drawable/input_bg"
+            android:layout_gravity="left"
+            android:paddingLeft="@dimen/default_16"
+            >
+            <RadioButton
+                android:id="@+id/radio_button_trainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_8"
+                style="@style/Base.Widget.AppCompat.DropDownItem.Spinner"
+                android:text="@string/married"
+                android:checked="true"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_vertical"
+                />
+            <RadioButton
+                android:id="@+id/radio_button_trainee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unmarried"
+                style="@style/Base.Widget.AppCompat.DropDownItem.Spinner"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="@dimen/default_24"
+                android:layout_gravity="center_vertical"
+                />
+        </RadioGroup>
+<include layout="@layout/next_button"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

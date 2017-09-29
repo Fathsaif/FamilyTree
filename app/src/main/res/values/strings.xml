@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">شجرة العيلة</string>
+
+    <string name="loading_text">loading ...</string>
+    <string name="retry_button">Try again</string>
+    <string name="error_general">Error occurred , please try again later</string>
+    <string name="check_internet_connection_title">Check your internet connection !</string>
+    <string name="skip">skip</string>
+    <string name="user_name_in_use">الاسم دا موجود</string>
+    <string name="user_name">اسمك الثنائى ايه؟!</string>
+    <string name="ener">أدخـــل </string>
+    <string name="main">الشجرة</string>
+    <string name="profile">صفحتى</string>
+    <string name="married">مـتـزوج</string>
+    <string name="unmarried">عـازب</string>
+    <string name="full_name"> اسـمـك بالكـامـل</string>
+    <string name="adress">عـنـوانـك الحـالى</string>
+    <string name="job">بتشتغل ايه ؟</string>
+    <string name="birth_date">تاريخ ميلادك</string>
+    <string name="next">اللى بعده</string>
+    <string name="phone">تليفونك</string>
+    <string name="add_photo">حطلنا صورة حلوة ليك</string>
+    <string name="bio">كلمنا شوية عن نفسك </string>
+    <string name="write_something">لو حابب تقول حاجة عن نفسك، طموحاتك، هواياتك، مقولة عجباك وكدا يعنى!</string>
+</resources>

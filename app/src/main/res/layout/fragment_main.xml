@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_3">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="120dp"
+       android:layout_height="120dp"
+       android:src="@drawable/unc_abdallah"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="16dp"
+        android:layout_marginRight="@dimen/default_36"
+       android:id="@+id/unc_abdallah"
+        android:layout_marginLeft="8dp"
+        app:civ_border_color="@android:color/holo_blue_bright"
+        app:civ_border_width="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.714" />
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@drawable/aunt_bata"
+    app:layout_constraintTop_toBottomOf="@+id/unc_abdallah"
+    android:layout_marginTop="21dp"
+    android:id="@+id/aunt_bata"
+    android:layout_marginRight="16dp"
+    app:civ_border_color="@android:color/holo_blue_bright"
+    app:civ_border_width="4dp"
+    app:layout_constraintRight_toRightOf="parent" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/unc_hamed"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/unc_hamed"
+        app:civ_border_color="@android:color/holo_blue_bright"
+        app:civ_border_width="4dp"
+        app:layout_constraintTop_toTopOf="@+id/aunt_bata"
+        app:layout_constraintBottom_toBottomOf="@+id/aunt_bata"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginLeft="56dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dad"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dad"
+        android:layout_marginTop="34dp"
+        app:civ_border_color="@android:color/holo_blue_bright"
+        app:civ_border_width="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/aunt_bata"
+        android:layout_marginRight="64dp"
+        app:layout_constraintRight_toRightOf="parent" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/unc_musatafa"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/unc_mustafa"
+        android:layout_marginRight="8dp"
+        app:civ_border_color="@android:color/holo_blue_bright"
+        app:civ_border_width="4dp"
+        app:layout_constraintRight_toRightOf="@+id/unc_hamed"
+        app:layout_constraintLeft_toLeftOf="@+id/unc_hamed"
+        app:layout_constraintTop_toTopOf="@+id/dad"
+        android:layout_marginTop="105dp"
+        app:layout_constraintHorizontal_bias="1.0" />
+</android.support.constraint.ConstraintLayout>
